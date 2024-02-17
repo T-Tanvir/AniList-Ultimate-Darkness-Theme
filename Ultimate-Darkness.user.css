@@ -3,7 +3,7 @@
 @namespace    https://github.com/T-Tanvir
 @author       t_tanvir
 @description  The ultimate dark theme for anilist
-@version      1.0.1
+@version      1.0.0
 @license      MIT
 @homepageURL  https://github.com/T-Tanvir/AniList-Ultimate-Darkness-Theme
 @supportURL   https://anilist.co/user/SF-Rock
@@ -2392,5 +2392,17 @@ url-prefix("https://anilist.co/staff/")
   .role-card .cover {
     border-radius: var(--curve-6px);
     box-shadow: var(--box-shadow);
+  }
+}
+
+@-moz-document url-prefix("https://anilist.co/apps")
+{
+  /*App page */
+  .app-section[data-v-eed91ade] {
+    background: none;
+  }
+
+  .image[data-v-eed91ade] {
+    box-shadow: none;
   }
 }
